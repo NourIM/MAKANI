@@ -1,0 +1,22 @@
+.membership-container {
+  top: 0;
+  height: 230px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 6px 6px 6px; 
+}
+
+.membership-content {
+  position: absolute;
+  left: 22px;
+  top: 40px;
+  width: 86%;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.swiper-slide {
+  width: 333px !important;
+  margin-right: 0px !important;
+}

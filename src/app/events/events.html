@@ -1,0 +1,21 @@
+<swiper [config]="config">
+  <div class="swiper-wrapper">
+    <article *ngFor="let event of events; let i = index;" class="event-container swiper-slide">
+      <figure>
+        <img src="{{event.image}}" class="thumb">
+      </figure>
+      <img src="assets/img/coming-soon1.png" class="coming-soon">
+      <figcaption>
+        <span> {{event.date}} | {{event.time}} PM </span>
+        <span><img src="assets/img/location_icon.png" alt="map"> {{event.place}} </span>
+        <div class="event-tile">
+          <span class="pull-left">{{event.eventType}}</span>
+          <span class="pull-right">{{event.ticket}}</span>
+        </div>
+      </figcaption>
+    </article>
+  </div>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>

@@ -1,0 +1,81 @@
+.navbar {
+  position: absolute;
+  /* overflow: hidden; */
+  top: 0px;
+  height: 14% !important;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(225, 225, 225, 1);   
+}
+
+.autocomplete-input {
+  position: absolute;
+  top: 24px;
+  z-index: 10000;
+  left: 150px;
+  height: 39px;
+  width: 430px;
+  border: 1px solid rgba(225, 224, 224, 1);
+  border-radius: 4px; 
+}
+
+.search a {
+  position: absolute;
+  top: 66px;
+  left: 150px;
+  height: 12px;
+  width: 88px;
+  font-family: 'Helvetica Neue';
+  font-size: 11px;
+  color: rgba(74, 74, 74, 1);
+  text-align: left;  
+}
+
+.cities-list {
+  position: absolute;
+  top: 24px;
+  left: 600px;
+  height: 39px;
+  width: 141px;
+  border: 1px solid rgba(225, 224, 224, 1);
+  border-radius: 4px;  
+}
+
+.date-list {
+  position: absolute;
+  top: 24px;
+  left: 766px;
+  height: 39px;
+  width: 141px;
+  border: 1px solid rgba(225, 224, 224, 1);
+  border-radius: 4px;
+}
+
+.options {
+  background: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  top: 3px;
+  color: rgba(150, 149, 151, 1);
+  text-align: left;
+}
+
+.social-media {
+  text-align: right;
+  top: 30px;
+  position: relative;
+  right: 65px;
+}
+
+.social-media a {
+  padding: 7px;
+}
+
+.left-side div {
+  z-index: 10000;
+}
+
+.btn-group {
+  width: 100%
+}

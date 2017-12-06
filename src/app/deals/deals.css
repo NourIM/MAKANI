@@ -1,0 +1,46 @@
+.event-container {
+  top: 0;
+  height: 230px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+img.coming-soon {
+  margin-top: -35px;
+}
+
+.event-container figcaption {
+  text-align: center;
+  width: 95%;
+  margin-top: -13px;
+}
+
+.event-container figcaption span {
+  display: inline-block;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-left: 18px;
+  font-family: 'Helvetica Neue';
+  color: rgba(150, 149, 151, 1);
+  text-align: center;
+}
+
+.swiper-slide {
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
+  width: 333px !important;
+  margin-right: 10px !important;
+}
+
+.swiper-container {
+  padding-bottom: 7px;
+}
+
+.thumb {
+  width: 100%
+}
+
+.swiper-wrapper {
+  padding: 5px 0;
+}

@@ -1,0 +1,63 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+.homepage-container {
+  position: relative;
+  width: 91%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.homepage-container .upcoming-events {
+  overflow: hidden;
+  position: relative;
+  top: 500px;
+  left: 150px;
+}
+
+div.see-all {
+  width: 84px;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: rgba(150, 149, 151, 1);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.see-all button {
+  height: 27px;
+  background: transparent;
+  width: 84px;
+  border: 1px solid rgba(165, 165, 165, 1);
+  border-radius: 14px;
+}
+
+.homepage-container h3 .title {
+  color: rgb(93, 92, 94);
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.homepage-container .memberships {
+  overflow: hidden;
+  position: relative;
+  top: 500px;
+  left: 150px;
+}
+
+.homepage-container .deals {
+  overflow: hidden;
+  position: relative;
+  top: 470px;
+  left: 150px;
+}
+
+.footer {
+  overflow: hidden;
+  position: relative;
+  top: 600px;
+  padding-right: 458px;
+}

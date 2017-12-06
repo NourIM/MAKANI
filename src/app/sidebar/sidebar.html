@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <div class="sidebar-brand">
+      <a href="#">
+        <img src="assets/img/logo.png" alt="Roobot Logo" />
+      </a>
+    </div>
+  
+    <ul class="nav sidebar-nav">
+      <li *ngFor="let item of menulist" class="drop-down">
+        <a *ngIf="!item.subMenu" href="#">{{item.title}}</a>
+        
+        <a *ngIf="item.subMenu" (click)="toggleSubMenu(item)" >{{item.title}} <span class="caret"></span></a>
+        <ul *ngFor="let subItem of item.subMenu" [ngClass]="item.expand === 'hide' ? 'sub-menu-list' : ''" role="menu">
+          <li class="sub-menu"><a href="#">{{subItem.title}}</a></li>
+        </ul>
+      </li>
+  
+      <li class="static-item"><a> About makain </a></li>
+      <li class="static-item"><a> Contact us </a></li>
+      <li class="static-item"><a> Help & FAQ </a></li>
+    </ul>
+  </nav>
