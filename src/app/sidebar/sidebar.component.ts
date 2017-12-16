@@ -20,11 +20,19 @@ export class SidebarComponent {
         { title: 'Business (22)', url: '/business' },
         { title: 'VIP (3)', url: '/vip' }
       ],
-      expand: 'hide'
+      expand: 'hide',
+      url: '/event'
     },
-    { title: 'Memberships', subItems: [], expand: 'hide'},
-    { title: 'Seasonal Tickets', subItems: [], expand: 'hide'},
-    { title: 'Purchases', subItems: [], expand: 'hide'}
+    { title: 'Memberships', subMenu: [
+      { title: 'Sports (20)', url: '/sports' },
+      { title: 'VIP (3)', url: '/vip' },
+      { title: 'Others (20)', url: '/others' }
+    ],
+    expand: 'hide',
+    url: '/memberships'
+  },
+    { title: 'Seasonal Tickets', subMenu: [], expand: 'hide', url: '/seasonal-tickets'},
+    { title: 'Purchases', subMenu: [], expand: 'hide', url: '/purchases'}
   ];
 
     this.menulist = example;

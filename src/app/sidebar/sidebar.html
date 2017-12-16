@@ -1,17 +1,17 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
     <div class="sidebar-brand">
-      <a href="#">
-        <img src="assets/img/logo.png" alt="Roobot Logo" />
+      <a [routerLink]="['/homepage']">
+        <img src="assets/img/logo.png" alt="Logo" />
       </a>
     </div>
   
     <ul class="nav sidebar-nav">
       <li *ngFor="let item of menulist" class="drop-down">
-        <a *ngIf="!item.subMenu" href="#">{{item.title}}</a>
+        <a *ngIf="!item.subMenu.length" href="#">{{item.title}}</a>
         
-        <a *ngIf="item.subMenu" (click)="toggleSubMenu(item)" >{{item.title}} <span class="caret"></span></a>
+        <a *ngIf="item.subMenu.length" (click)="toggleSubMenu(item)" >{{item.title}} <span class="caret"></span></a>
         <ul *ngFor="let subItem of item.subMenu" [ngClass]="item.expand === 'hide' ? 'sub-menu-list' : ''" role="menu">
-          <li class="sub-menu"><a href="#">{{subItem.title}}</a></li>
+          <li class="sub-menu"><a [routerLink]="[item.url, subItem.url]">{{subItem.title}}</a></li>
         </ul>
       </li>
   

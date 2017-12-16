@@ -1,27 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
+import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
-import { SidebarModule } from './sidebar/sidebar.module';
-import { NavbarModule } from './navbar/navbar.module';
-import { EventsModule } from './events/events.module';
-import { HeaderModule } from './header/header.module';
 import { MemebershipsModule } from './memberships/memberships.module';
-import { DealsModule } from './deals/deals.module';
+import { HomepageModule } from './homepage/homepage.module';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { MainLayoutModule } from './main-layout/main-layout.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    RouterModule.forRoot(ROUTES),
     BrowserModule,
-    SidebarModule,
-    HeaderModule,
-    NavbarModule,
-    EventsModule,
+    SwiperModule,
+    RouterModule,
     MemebershipsModule,
-    DealsModule,
-    SwiperModule
+    HomepageModule,
+    MainLayoutModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]

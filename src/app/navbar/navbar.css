@@ -1,9 +1,9 @@
 .navbar {
   position: absolute;
-  /* overflow: hidden; */
   top: 0px;
-  height: 14% !important;
+  height: 90px;
   width: 100%;
+  min-height: auto;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(225, 225, 225, 1);   

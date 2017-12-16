@@ -1,0 +1,17 @@
+<swiper [config]="config">
+  <div class="swiper-wrapper">
+    <div *ngFor="let membership of memberships" class="swiper-slide">
+      <div class="membership-container">
+        <img class="membership-card" src="{{membership.image}}">
+        <div class="membership-content">
+          <img src="assets/img/srimpr_etvts.png" class="srimpr-etvts" alt="">
+          <span><h2>500 SR</h2></span>
+          <span class="pull-right"><h6>Lorem ipsum text</h6></span>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>
