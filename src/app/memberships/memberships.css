@@ -1,9 +1,17 @@
-.bot-quick-response {
+.memberships-container {
   display: block;
   position: relative;
   padding: 0;
-  top: 120px;
-  left: 170px;
+  top: 110px;
+  left: 150px;
+}
+
+.memberships-container h1 {
+  color: #0B090E;
+}
+
+.bot-quick-response {
+
 }
 
 .bot-quick-response .generic-sub-continer {
@@ -25,8 +33,16 @@
   position: relative;
   -webkit-transition: none;
   transition: none;
+  width: 130px;
+  color: rgb(146, 144, 147)
 }
 
 .btn-outline-primary {
+  border-color: rgb(146, 144, 147);
+}
+
+span.btn.btn-outline-primary.floating-left .active {
+  background-color: rgba(235, 48, 49, 1);
   border-color: rgba(235, 48, 49, 1);
-} 
+  color: white;
+}
