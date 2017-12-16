@@ -33,7 +33,7 @@
   position: relative;
   -webkit-transition: none;
   transition: none;
-  width: 130px;
+  width: 110px;
   color: rgb(146, 144, 147)
 }
 
@@ -41,8 +41,9 @@
   border-color: rgb(146, 144, 147);
 }
 
-span.btn.btn-outline-primary.floating-left .active {
+.active {
   background-color: rgba(235, 48, 49, 1);
   border-color: rgba(235, 48, 49, 1);
-  color: white;
+  color: white !important;
+  box-shadow: none;
 }

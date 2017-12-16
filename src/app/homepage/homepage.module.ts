@@ -15,6 +15,7 @@ import { MemebershipCardsModule } from './../membership-cards/membership-cards.m
     EventsModule,
     MemebershipCardsModule,
     DealsModule,
+    RouterModule,
     HeaderModule
   ],
   declarations: [ HomepageComponent ],

@@ -13,20 +13,20 @@ export class SidebarComponent {
     const example = [{
       title: 'Events',
       subMenu: [
-        { title: 'Sports (20)', url: '/sports' },
+        { title: 'Sports (20)', url: 'sports' },
         { title: 'Cestivals (11)', url: '/festivals' },
-        { title: 'Conferences (1)', url: '/conferences' },
-        { title: 'Family (1)', url: '/family' },
-        { title: 'Business (22)', url: '/business' },
-        { title: 'VIP (3)', url: '/vip' }
+        { title: 'Conferences (1)', url:'/conferences' },
+        { title: 'Family (1)', url: 'family' },
+        { title: 'Business (22)', url: 'business' },
+        { title: 'VIP (3)', url: 'vip' }
       ],
       expand: 'hide',
       url: '/event'
     },
     { title: 'Memberships', subMenu: [
-      { title: 'Sports (20)', url: '/sports' },
-      { title: 'VIP (3)', url: '/vip' },
-      { title: 'Others (20)', url: '/others' }
+      { title: 'Sports (20)', url: 'sports' },
+      { title: 'VIP (3)', url: 'vip' },
+      { title: 'Others (20)', url: 'others' }
     ],
     expand: 'hide',
     url: '/memberships'

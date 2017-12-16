@@ -8,9 +8,8 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 export const ROUTES: Routes = [
   { path: '', component: MainLayoutComponent, children: [
     { path: 'homepage', component: HomepageComponent, data: { title: 'Homepage' } },
-    { path: 'memberships', component: MemebershipsComponent, data: { title: 'Memberships' }, children: [
-      { path: ':event', component: MemebershipsComponent }]
-    },
+    { path: 'memberships', component: MemebershipsComponent, data: { title: 'Memberships' } },
+    { path: 'memberships/:event', component: MemebershipsComponent, data: { title: 'Memberships' } },
     { path: '**', component: HomepageComponent },
     { path: '', component: HomepageComponent }
   ]}

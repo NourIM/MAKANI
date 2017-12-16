@@ -14,12 +14,12 @@
   <div class="memberships">
     <div class="line-row extra-space-3">
       <h3>
-        <a class="title pull-left" href="#Memberships"><h3>Memberships</h3></a>
+        <a class="title pull-left" [routerLink]="['/memberships']"><h3>Memberships</h3></a>
         <div class="see-all pull-right"><button>View All</button></div>
       </h3>
     </div>
     <div class="line-row extra-space-1">
-      <Membership-cards></Membership-cards>
+      <Membership-cards [cards]="cards"></Membership-cards>
     </div>
   </div>
   <div class="deals">
