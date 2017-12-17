@@ -42,8 +42,12 @@
 }
 
 .active {
-  background-color: rgba(235, 48, 49, 1);
-  border-color: rgba(235, 48, 49, 1);
+  background-color: #b44245;
+  border-color: #b44245;
   color: white !important;
   box-shadow: none;
+}
+
+.extra-space-3 {
+  margin-top: 45px;
 }

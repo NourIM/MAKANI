@@ -8,13 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 
 
-export class MemebershipsComponent {
-
+export class MemebershipsComponent implements OnInit {
 	public activeTab: string = 'all';
 	public tabs = {
 		'all': [
-		{image: 'assets/img/group_5_copy.png'},
-		{image: 'assets/img/group_5.png'},
+      {image: 'assets/img/group_5_copy.png'},
+      {image: 'assets/img/group_5.png'},
 	    {image: 'assets/img/group_5_copy_2.png'},
 	    {image: 'assets/img/group_5_copy.png'}
     ],
@@ -62,13 +61,14 @@ export class MemebershipsComponent {
 	    {image: 'assets/img/group_5_copy_2.png'},
 	    {image: 'assets/img/group_5_copy.png'}
 	  ]
-	 };
+  };
+
 	constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
-	this.route.params.subscribe((params) => {
-	  this.activeTab = params['event']; 
-	});
+		this.route.params.subscribe((params) => {
+			this.activeTab = params['event']; 
+		});
   }
 
   public onChange(tab) {
